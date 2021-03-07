@@ -1,0 +1,52 @@
+@import url(./variabel.css);
+
+@media screen and (max-width : 800px){
+    /* header */
+
+
+    nav .hamburger-menu{
+        display: flex;
+    
+    }
+    
+.slider{
+    height: 70vmin;
+}
+    nav .menu {
+        position: fixed;
+        top: 0;
+        background-color: black;
+        bottom: 0;
+        left: -50%;
+        flex-direction: column;
+        transition: .5s ease-out;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        
+    }
+    .hamburger-menu.show span:nth-child(1){
+        transform: translate(-5px,7px) rotate(
+            45deg
+            );  transition: .5;
+    }
+    .hamburger-menu.show span:nth-child(2){
+       opacity: 0;
+    }
+    .hamburger-menu.show span:nth-child(3){
+        transform: translate(-5px,-10px) rotate(
+            -45deg
+            );
+          
+    }
+    nav .menu.show{
+        left: 0;
+    }
+    .card-section .card{
+        height: 40vmin;
+    }
+
+    .card-image span.icon{
+        left: 40%;
+    }
+}

@@ -1,0 +1,16 @@
+@import url(./variabel.css);
+
+@media screen and (max-width : 569px){
+    nav{
+        justify-content: space-between;
+    }
+    /* card slider */
+    .bot-slider .card-slider{
+        width: 100%;
+    }
+    .card-section .card{
+        width: 100%;
+        height: 100vmin;
+        margin-bottom: 10px;
+    }
+}
